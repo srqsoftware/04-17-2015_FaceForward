@@ -53,7 +53,8 @@
                  NSMutableString *everything = [NSMutableString stringWithFormat:@"<html><body>"];
                  for(int i = data.count-1; i >=0; i--) {
                      NSDictionary *curItem = [data objectAtIndex:i];
-                     NSString *curId = [curItem objectForKey:@"id"];
+                     // Frank: Fix this next line of code!
+                     //NSString *curId = [curItem objectForKey:@"id"];
                      NSString *curStory = [curItem objectForKey:@"story"];
                      NSString *picURL = [curItem objectForKey:@"picture"];
                      NSString *descr = [curItem objectForKey:@"description"];
